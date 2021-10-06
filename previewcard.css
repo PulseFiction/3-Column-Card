@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+:root {
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-cyan: hsl(184, 100%, 22%);
+    --clr-primary-dark-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
+    --clr-neutral-grey: hsl(0, 0%, 95%);
+
+}
+
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+#container {
+    display: flex;
+    width: 33%;
+    margin: 0 auto;
+    position: relative;
+    top: 10em;
+    height: 45vh;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--clr-neutral-grey)
+}
+
+p {
+    
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--clr-neutral-white);
+    font-size: 10pt;
+    padding-bottom: 5em;
+    width: 24ch;
+}
+
+#sedan {
+    background: var(--clr-primary-orange);
+    padding: 2em;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#suv {
+    background: var(--clr-primary-cyan);
+    padding: 2em;
+}
+
+#luxury {
+    background: var(--clr-primary-dark-cyan);
+    padding: 2em;
+    border-radius: 0px 10px 10px 0;px;;
+}
+
+.button1 {
+    background-color: var(--clr-primary-orange);
+    border-radius: 25px;
+    padding: 1em;
+    color: var(--clr-neutral-grey);
+    border-style: solid;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 10em;
+}
+
+.button2 {
+    background-color: var(--clr-primary-cyan);
+    border-radius: 25px;
+    padding: 1em;
+    color: var(--clr-neutral-grey);
+    border-style: solid;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 10em;
+}
+
+.button3 {
+    background-color: var(--clr-primary-dark-cyan);
+    border-radius: 25px;
+    padding: 1em;
+    color: var(--clr-neutral-grey);
+    border-style: solid;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 10em;
+}
+
+#buttons:hover {
+    cursor: pointer;
+    
+}
+
+.attribution {
+    position: relative;
+    top: 14em;
+}
