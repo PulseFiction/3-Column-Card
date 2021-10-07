@@ -30,13 +30,19 @@ body {
     border-radius: 10px;
     overflow: hidden;
     
-    
-    
-    
-    
 }
 
-h1 {
+.sr-only {
+    position: absolute;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     color: var(--clr-neutral-grey)
@@ -56,18 +62,21 @@ p {
     background: var(--clr-primary-orange);
     padding: 2em;
     border-radius: 10px 0px 0px 10px;
+    line-height: 1.7;
     
 }
 
 .suv {
     background: var(--clr-primary-cyan);
     padding: 2em;
+    line-height: 1.7;
 }
 
 .luxury {
     background: var(--clr-primary-dark-cyan);
     padding: 2em;
     border-radius: 0px 10px 10px 0px;
+    line-height: 1.7;
     
 }
 
@@ -112,6 +121,13 @@ p {
 .attribution {
     position: relative;
     top: 11rem;
+    font-size: 11px; 
+    text-align: center; 
+    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 
