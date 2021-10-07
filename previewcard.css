@@ -18,15 +18,22 @@ font-family: 'Lexend Deca', sans-serif; */
 
 body {
     font-size: 15px;
+    
 }
 
-#container {
+#main {
+    
     display: flex;
-    width: 33%;
-    margin: 0 auto;
+    justify-content: center;
     position: relative;
-    top: 10em;
-    height: 45vh;
+    top: 10rem;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+    
+    
+    
 }
 
 h1 {
@@ -45,21 +52,23 @@ p {
     width: 24ch;
 }
 
-#sedan {
+.sedan {
     background: var(--clr-primary-orange);
     padding: 2em;
     border-radius: 10px 0px 0px 10px;
+    
 }
 
-#suv {
+.suv {
     background: var(--clr-primary-cyan);
     padding: 2em;
 }
 
-#luxury {
+.luxury {
     background: var(--clr-primary-dark-cyan);
     padding: 2em;
-    border-radius: 0px 10px 10px 0;px;;
+    border-radius: 0px 10px 10px 0px;
+    
 }
 
 .button1 {
@@ -94,10 +103,37 @@ p {
 
 #buttons:hover {
     cursor: pointer;
+    background: #fff;
+    color: black;
+    border-color: black;
     
 }
 
 .attribution {
     position: relative;
-    top: 14em;
+    top: 11rem;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+    }
+
+    #sedan {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .attribution {
+        top: 0.5rem;
+    }
+
+    
 }
